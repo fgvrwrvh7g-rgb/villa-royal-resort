@@ -33,6 +33,10 @@ export const Route = createFileRoute("/")({
   component: Villa,
 });
 
+const BOOKING_URL = "https://www.booking.com/hotel/ba/villa-royal-resort-lisice.de.html?aid=356938&label=metagha-link-LUBA-hotel-15550562_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-21404706195_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20260528_ppt-_lp-2070_r-13841522247042945965&sid=ed8a556ebbe58c9af7dca972952f52f7&all_sr_blocks=1555056204_426800443_2_0_0&checkin=2026-05-28&checkout=2026-05-29&dest_id=15550562&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1555056204_426800443_2_0_0&hpos=1&matching_block_id=1555056204_426800443_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1555056204_426800443_2_0_0__10000&srepoch=1779903091&srpvid=0ef27b35d15902c3&type=total&ucfs=1&";
+const PHONE_DISPLAY = "063 470 073";
+const PHONE_HREF = "tel:+38763470073";
+
 const amenities = [
   { icon: Waves, title: "Saisonaler Außenpool", desc: "Türkisblaues Wasser unter mediterranem Himmel." },
   { icon: TreePine, title: "Garten & Terrasse", desc: "Grüne Rückzugsorte, gemacht für lange Abende." },
@@ -71,7 +75,7 @@ function Villa() {
             <a href="#umgebung" className="hover:text-foreground transition">Umgebung</a>
             <a href="#kontakt" className="hover:text-foreground transition">Kontakt</a>
           </nav>
-          <a href="#kontakt" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-foreground text-background text-sm hover:bg-primary transition">
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-foreground text-background text-sm hover:bg-primary transition">
             Reservieren <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -101,7 +105,7 @@ function Villa() {
               Sonnenverwöhnte Tage am Pool, mediterrane Abende im Garten — die Villa Royal Resort ist Ihr privater Rückzugsort, nur Minuten von den Kravica-Wasserfällen.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#kontakt" className="px-7 py-3.5 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition shadow-elegant">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition shadow-elegant">
                 Aufenthalt anfragen
               </a>
               <a href="#villa" className="px-7 py-3.5 rounded-full border border-cream/40 text-cream hover:bg-cream/10 transition">
@@ -326,11 +330,11 @@ function Villa() {
               Senden Sie uns eine Nachricht und wir antworten innerhalb von 24 Stunden mit Verfügbarkeiten und einem persönlichen Angebot.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <a href="mailto:info@villaroyalresort.com" className="px-8 py-4 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition">
                 Verfügbarkeit anfragen
               </a>
-              <a href="tel:+387" className="px-8 py-4 rounded-full border border-cream/40 hover:bg-cream/10 transition">
-                Anrufen
+              <a href={PHONE_HREF} className="px-8 py-4 rounded-full border border-cream/40 hover:bg-cream/10 transition">
+                {PHONE_DISPLAY}
               </a>
             </div>
           </Reveal>
