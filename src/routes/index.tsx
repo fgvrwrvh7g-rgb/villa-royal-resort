@@ -5,11 +5,14 @@ import {
   Waves, TreePine, Wifi, Car, ChefHat, Wine, Mountain, Fish,
   MapPin, Plane, ArrowRight, Sparkles,
 } from "lucide-react";
-import heroImg from "@/assets/hero-villa.jpg";
-import poolImg from "@/assets/pool.jpg";
-import kitchenImg from "@/assets/kitchen.jpg";
+import heroImg from "@/assets/b-pool-hero.jpg";
+import poolImg from "@/assets/b-pool-chairs.jpg";
+import kitchenImg from "@/assets/b-kitchen.jpg";
 import waterfallImg from "@/assets/waterfall.jpg";
-import terraceImg from "@/assets/terrace.jpg";
+import terraceImg from "@/assets/b-pool-yard.jpg";
+import bedroomImg from "@/assets/b-bedroom.jpg";
+import bedroom2Img from "@/assets/b-bedroom2.jpg";
+import gardenImg from "@/assets/b-garden.jpg";
 import { Reveal } from "@/components/villa/Reveal";
 
 export const Route = createFileRoute("/")({
