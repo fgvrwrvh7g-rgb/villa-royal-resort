@@ -75,7 +75,7 @@ function Villa() {
             <a href="#umgebung" className="hover:text-foreground transition">Umgebung</a>
             <a href="#kontakt" className="hover:text-foreground transition">Kontakt</a>
           </nav>
-          <a href="#kontakt" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-foreground text-background text-sm hover:bg-primary transition">
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-foreground text-background text-sm hover:bg-primary transition">
             Reservieren <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -105,7 +105,7 @@ function Villa() {
               Sonnenverwöhnte Tage am Pool, mediterrane Abende im Garten — die Villa Royal Resort ist Ihr privater Rückzugsort, nur Minuten von den Kravica-Wasserfällen.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#kontakt" className="px-7 py-3.5 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition shadow-elegant">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition shadow-elegant">
                 Aufenthalt anfragen
               </a>
               <a href="#villa" className="px-7 py-3.5 rounded-full border border-cream/40 text-cream hover:bg-cream/10 transition">
@@ -330,11 +330,11 @@ function Villa() {
               Senden Sie uns eine Nachricht und wir antworten innerhalb von 24 Stunden mit Verfügbarkeiten und einem persönlichen Angebot.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <a href="mailto:info@villaroyalresort.com" className="px-8 py-4 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-full bg-gold text-foreground font-medium hover:opacity-90 transition">
                 Verfügbarkeit anfragen
               </a>
-              <a href="tel:+387" className="px-8 py-4 rounded-full border border-cream/40 hover:bg-cream/10 transition">
-                Anrufen
+              <a href={PHONE_HREF} className="px-8 py-4 rounded-full border border-cream/40 hover:bg-cream/10 transition">
+                {PHONE_DISPLAY}
               </a>
             </div>
           </Reveal>
