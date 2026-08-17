@@ -1,1 +1,9 @@
-
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "villa-royal-resort",
+  "compatibility_date": "2026-08-17",
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true
+  }
+}
